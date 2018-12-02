@@ -23,6 +23,7 @@ public class DescriptionQualityService {
 		return rating;
 	}
 	
+	
 	private int typologyDescriptionQuality(Anuncio anuncio) {
 		switch (anuncio.getTypology()) {
 			case FLAT:
@@ -61,7 +62,7 @@ public class DescriptionQualityService {
 	}
 	
 	private boolean validDescription(String description) {
-		return !StringUtils.hasText(description);
+		return StringUtils.hasText(description);
 	}
 
 }

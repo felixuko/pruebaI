@@ -34,6 +34,7 @@ public class AnunciosBootstrap implements ApplicationListener<ContextRefreshedEv
 		anuncio1.setId(1L);
 		anuncioRespository.save(anuncio1);
 		
+		
 		Anuncio anuncio2 = new Anuncio("Nuevo ático céntrico recién reformado. No deje pasar la oportunidad y adquiera este ático de lujo", Typology.FLAT);
 		anuncio2.setId(2L);
 		Foto foto4 = new Foto(4L, "http://www.idealista.com/pictures/4", "HD");

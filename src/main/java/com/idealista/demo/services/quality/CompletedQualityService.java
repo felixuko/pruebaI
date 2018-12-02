@@ -29,12 +29,12 @@ public class CompletedQualityService {
 	}
 
 	private boolean chaletIsCompleted(Anuncio anuncio) {
-		return !anuncio.getPictures().isEmpty() && !StringUtils.hasText(anuncio.getDescription())
+		return !anuncio.getPictures().isEmpty() && StringUtils.hasText(anuncio.getDescription())
 				&& anuncio.getHouseSize() != null && anuncio.getGardenSize() != null;
 	}
 
 	private boolean flatIsCompleted(Anuncio anuncio) {
-		return !anuncio.getPictures().isEmpty() && !StringUtils.hasText(anuncio.getDescription())
+		return !anuncio.getPictures().isEmpty() && StringUtils.hasText(anuncio.getDescription())
 				&& anuncio.getHouseSize() != null;
 	}
 

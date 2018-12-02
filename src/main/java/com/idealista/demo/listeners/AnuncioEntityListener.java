@@ -20,7 +20,6 @@ public class AnuncioEntityListener {
 	@PreUpdate
 	@PrePersist
 	public void preUpdate(Anuncio anuncio) {
-		System.out.println(anuncio);
 		anuncio.setRating(ratingService.rating(anuncio));
 	}
 	
