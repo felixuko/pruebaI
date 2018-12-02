@@ -7,16 +7,16 @@ import org.springframework.stereotype.Component;
 import com.idealista.demo.model.Anuncio;
 import com.idealista.demo.model.Foto;
 import com.idealista.demo.model.Typology;
-import com.idealista.demo.repositories.AnuncioRespository;
+import com.idealista.demo.repositories.AnuncioRepository;
 import com.idealista.demo.repositories.FotoRepository;
 
 @Component
 public class AnunciosBootstrap implements ApplicationListener<ContextRefreshedEvent>{
 
-	private AnuncioRespository anuncioRespository;
+	private AnuncioRepository anuncioRespository;
     private FotoRepository fotoRepository;
 
-    public AnunciosBootstrap(AnuncioRespository anuncioRespository, FotoRepository fotoRepository) {
+    public AnunciosBootstrap(AnuncioRepository anuncioRespository, FotoRepository fotoRepository) {
         this.anuncioRespository = anuncioRespository;
         this.fotoRepository = fotoRepository;
     }
