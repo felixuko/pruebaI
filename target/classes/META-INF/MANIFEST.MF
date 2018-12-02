@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: idealista
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Felix
+Implementation-Vendor-Id: com.idealista
+Build-Jdk: 1.8.0_151
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/idealista
+Created-By: Maven Integration for Eclipse
+
